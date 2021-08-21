@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "ArcadeFont";
+    src: url("font/PressStart2P-Regular.ttf");
+    font-size: normal;
+    font-weight: 100;
+}
+
+
+body {
+    font-family: "ArcadeFont";
+   background-image:url(pac-man_background.jpg);
+    background-position-y: -150px;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    margin-left: 20px;
+    background-size:cover;  
+}
+
+body.incognito{
+    background-image:linear-gradient(black, black),url("pac-man_background.jpg");
+    background-blend-mode: saturation;
+}
+
+main{
+    display:flex;
+    
+}
+
+.menu-buttons{
+    height:500px;
+    width:500px;
+    /*display:inline;*/
+}
+
+h2{
+    padding: 20px 0 20px 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.hobbies{
+    background-color:#5ca9b3;
+}
+.interests{
+    background-color: #b5171a;
+}
+.reason{
+    background-color:#167148;
+}
+
+.display{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:120%;
+    width:70%;
+    margin-left: 2%;
+    
+
+}
+/*figure{
+    height:100%;
+    width:85%;
+    border:2px solid black;
+    margin:10px;
+  /*  background-image: url(tumbleWeed.gif);
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    color:azure;
+    padding: 20px;
+    line-height: 1.5rem;
+    
+}*/
+
+.slideContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slideContainer figure {
+    display: flex;
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+
+
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    95% {
+        left: -300%
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+figure img {
+    width: 20%;
+    height: 700px;
+    float: left;
+    overflow-y: hidden;
+}
+
+figure.whirlPool{
+    filter:contrast(70%)
+}
+
+/*.top{    
+    margin-top: 50px;
+}
+.bottom{    
+    margin-bottom:120px;
+}
+*/
+.button1{
+    font-size: 0;
+}
+.button2{
+    font-size: 0;
+}
+
+.button1.reveal{
+    font-size: 100px;
+    cursor:pointer;  
+}
+.button2.reveal{
+    font-size: 100px;
+    cursor:pointer;
+}
+
+.button1:hover{
+    text-shadow: -4px 5px 5px rgb(0, 0, 0);
+}
+
+
+.button2:hover{
+    text-shadow: 4px 5px 5px rgb(0, 0, 0);
+}
+

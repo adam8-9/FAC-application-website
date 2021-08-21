@@ -1,0 +1,18 @@
+.background{
+    background-image: url("tunnel.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:95vh;
+}
+
+.press-start{
+    background-image: url("pressStart.png");
+    background-size: contain;
+    width: 500px;
+    height: 250px;
+    background-repeat: no-repeat;
+
+
+}
