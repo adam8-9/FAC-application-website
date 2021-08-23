@@ -12,17 +12,14 @@ let button2 = document.querySelector(".button2")
 
 
 let removeIntro = () => {
-
     intro.classList.add("hide")
 }
 
 let removeHobbies = () => {
-
     slideContainer.classList.add("hide")
 }
 
 let removeJourney = () => {
-
     journey.classList.add("hide")
 
 }
@@ -57,7 +54,6 @@ button2.addEventListener("click", (f) => {
 interests.addEventListener("click", (e) => {
     removeIntro()
     removeHobbies()
-
     journey.classList.remove("hide")
 
 
