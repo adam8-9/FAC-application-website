@@ -8,21 +8,53 @@
 
 body {
     font-family: "ArcadeFont";
-   background-image:url(pac-man_background.jpg);
-    background-position-y: -150px;
+    background-image: url('pacman-run.gif');
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    background-position-y: 15%;
     justify-content: center;
     margin-left: 20px;
-    background-size:cover;  
+  
+   
 }
 
-body.incognito{
-    background-image:linear-gradient(black, black),url("pac-man_background.jpg");
-    background-blend-mode: saturation;
+body.chase{
+    background-image:url("pacman-chase.gif");
+   
+}
+.flip{
+    transform:scaleX(-1)
+}
+.headingBlue{
+    color:#064af6;
+}
+h2.menuBlue{
+    background-color:#064af6;
 }
 
+
+
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.background-change{
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    justify-content: space-around;
+    margin-right: 10%;
+    width: 15%;
+    border: 1px solid blue;
+    padding: 1%;
+}
+
+
+h1{
+    color:#ffed02;
+}
 main{
     display:flex;
     
@@ -41,13 +73,19 @@ h2{
 }
 
 .hobbies{
-    background-color:#5ca9b3;
+    background-color:#fd0303;
+    opacity: 0.7;
+}
+.menu-buttons h2:hover{
+    opacity: 1;
 }
 .interests{
-    background-color: #b5171a;
+    background-color: #00f2d3;
+    opacity: 0.7;
 }
 .reason{
-    background-color:#167148;
+    background-color:#f2acd3;
+    opacity: 0.7;
 }
 
 /*to hide and show content*/
@@ -170,7 +208,8 @@ h2{
 .journey{
     height:600px;
     background-size: cover;
-     background-image: url(WhirlPool.gif);
+     background-image: url(trainloop.gif);
+     opacity: 0.9;
  }
 
 figure.whirlPool{
@@ -202,3 +241,20 @@ figure.whirlPool{
     text-shadow: 4px 5px 5px rgb(0, 0, 0);
 }
 
+footer {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 7%;
+    background-color: #e49828;
+
+
+}
+
+footer img{
+    height:3rem;
+    width:3.5rem
+}
+
+.footerBlue{
+    background-color: #064af6;
+}

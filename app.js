@@ -1,4 +1,7 @@
-
+let body = document.querySelector("body")
+let heading = document.querySelector("h1")
+let backgroundChange = document.querySelector(".background-change")
+let arrow = document.querySelector(".arrow")
 let hobbies = document.querySelector(".hobbies")
 let interests = document.querySelector(".interests")
 let reason = document.querySelector(".reason")
@@ -6,10 +9,22 @@ let output = document.querySelector(".output")
 let intro = document.querySelector(".intro")
 let slideContainer = document.querySelector(".slideContainer")
 let journey = document.querySelector(".journey")
-
 let button1 = document.querySelector(".button1")
 let button2 = document.querySelector(".button2")
+let footerImages = document.querySelectorAll("footer img")
+let footer = document.querySelector("footer")
 
+backgroundChange.addEventListener("click", (e) => {
+    // console.log(body.style.backgroundImage)
+    body.classList.toggle("chase")
+    arrow.classList.toggle("flip")
+    heading.classList.toggle("headingBlue")
+    hobbies.classList.toggle("menuBlue")
+    interests.classList.toggle("menuBlue")
+    reason.classList.toggle("menuBlue")
+    footer.classList.toggle("footerBlue")
+    //footerImages.classList.toggle("footerBlue")
+})
 
 let removeIntro = () => {
     intro.classList.add("hide")
