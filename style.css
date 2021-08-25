@@ -30,6 +30,7 @@ body.chase{
 }
 h2.menuBlue{
     background-color:#064af6;
+    color:#fefefa;
 }
 
 
@@ -48,11 +49,23 @@ header{
     margin-right: 10%;
     width: 15%;
     border: 1px solid blue;
-    padding: 1%;
+    padding:0.5%;
+
 }
 
+.background-change:hover{
+    border: 3px solid blue;
+}
 
 h1{
+    color:#ffed02;
+}
+
+.score{
+    color:#ffed02;
+    margin-right: 22%;
+}
+.number{
     color:#ffed02;
 }
 main{
@@ -75,6 +88,7 @@ h2{
 .hobbies{
     background-color:#fd0303;
     opacity: 0.7;
+ 
 }
 .menu-buttons h2:hover{
     opacity: 1;
@@ -87,9 +101,16 @@ h2{
     background-color:#f2acd3;
     opacity: 0.7;
 }
-
+.game{
+    background-color:#e49828;
+    opacity: 0.7;
+}
 /*to hide and show content*/
 .hide{
+    display:none;
+}
+
+.gifContainer.hide{
     display:none;
 }
 
@@ -110,7 +131,7 @@ h2{
     width:85%;
    /* margin:10px;*/
     display:flex;
-    
+    padding:10px;
     /*flex-direction: column;
     justify-content:space-between ;
     color:azure;
@@ -210,6 +231,7 @@ h2{
     background-size: cover;
      background-image: url(trainloop.gif);
      opacity: 0.9;
+     padding:0 2% 0 2%;
  }
 
 figure.whirlPool{
@@ -257,4 +279,239 @@ footer img{
 
 .footerBlue{
     background-color: #064af6;
+}
+/*game styles*/
+
+#image1.gif{
+    z-index: -1;
+    height: 33.33%;
+    width:20%;
+    background-image: url("ghost1.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+ 
+}
+#image1.cover1{
+    z-index: 1;
+    height: 33.33%;
+    width:20%;
+    background-color: blue;
+    border: 1px solid black;
+   
+}
+
+#image2.cover2{
+    z-index: 1;
+    height: 33.33%;
+    width:20%;
+    background-color: blue;
+    border: 1px solid black;
+    
+}
+
+#image2.gif{
+    z-index: -1;
+    height: 33.33%;
+    width:20%;
+    background-image: url("ghost2.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+ 
+}
+#image3.cover3{
+    z-index: 1;
+    height: 33.33%;
+    width:20%;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#image3.gif{
+    z-index: -1;
+    height: 33.33%;
+    width:20%;
+    background-image: url("ghost3.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+#image4.cover4{
+    z-index: 1;
+    height: 33.33%;
+    width:20%;
+    background-color: blue;
+    border: 1px solid black;
+}
+#image4.gif{
+    z-index: -1;
+    height: 33.33%;
+    width:20%;
+    background-image: url("ghost4.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+ 
+}
+#image5.cover5{
+    z-index: 1;
+    height: 33.33%;
+    width:20%;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#image5.gif{
+    z-index: -1;
+    height: 33.33%;
+    width:20%;
+    background-image: url("pacman.gif");
+background-size: cover;
+    background-repeat: no-repeat;
+    
+ 
+}
+#image6.cover6{
+    z-index: 1;
+    height: 33.33%;
+    width:20%;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+
+#image6.gif{
+    z-index: -1;
+    height: 33.33%;
+    width:20%;
+    background-image: url("weak-ghost.gif");
+background-size: cover;
+    background-repeat: no-repeat;
+    
+ 
+}
+#image7.gif{
+    z-index: -1;
+    height: 33.33%;
+    width:20%;
+    background-image: url("ghost1.gif");
+background-size: cover;
+    background-repeat: no-repeat;
+    
+ 
+}
+#image7.cover1{
+    z-index: 1;
+    height: 33.33%;
+    width:20%;
+    background-color: blue;
+    border: 1px solid black;
+   
+}
+
+#image8.cover2{
+    z-index: 1;
+    height: 33.33%;
+    width:20%;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#image8.gif{
+    z-index: -1;
+    height: 33.33%;
+    width:20%;
+    background-image: url("ghost2.gif");
+background-size: cover;
+    background-repeat: no-repeat;
+    
+ 
+}
+#image9.cover3{
+    z-index: 1;
+    height: 33.33%;
+    width:20%;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#image9.gif{
+    z-index: -1;
+    height: 33.33%;
+    width:20%;
+    background-image: url("ghost3.gif");
+background-size: cover;
+    background-repeat: no-repeat;
+    
+ 
+}
+#image10.cover4{
+    z-index: 1;
+    height: 33.33%;
+    width:20%;
+    background-color: blue;
+    border: 1px solid black;
+}
+#image10.gif{
+    z-index: -1;
+    height: 33.33%;
+    width:20%;
+    background-image: url("ghost4.gif");
+background-size: cover;
+    background-repeat: no-repeat;
+    
+ 
+}
+#image11.cover5{
+    z-index: 1;
+    height: 33.33%;
+    width:20%;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#image11.gif{
+    z-index: -1;
+    height: 33.33%;
+    width:20%;
+    background-image: url("pacman.gif");
+background-size: cover;
+    background-repeat: no-repeat;
+    
+ 
+}
+#image12.cover6{
+    z-index: 1;
+    height: 33.33%;
+    width:20%;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+
+#image12.gif{
+    z-index: -1;
+    height: 33.33%;
+    width:20%;
+    background-image: url("weak-ghost.gif");
+background-size: cover;
+    background-repeat: no-repeat;
+    
+ 
+}
+.gifContainer {
+    height:600px;
+ flex-wrap: wrap;
+    display: flex;
+   
+    width: 100%;
+ 
+}
+.gifContainer img{
+    height: 300px;
+    width:300px;
+    z-index: -1;
+    
 }
