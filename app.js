@@ -4,7 +4,7 @@ let backgroundChange = document.querySelector(".background-change")
 let arrow = document.querySelector(".arrow")
 
 let hobbies = document.querySelector(".hobbies")
-let interests = document.querySelector(".interests")
+let journey = document.querySelector(".journey")
 let reason = document.querySelector(".reason")
 let game = document.querySelector(".game")
 let score = document.querySelector(".score")
@@ -73,7 +73,8 @@ function clickCheck(e) {
 let output = document.querySelector(".output")
 let intro = document.querySelector(".intro")
 let slideContainer = document.querySelector(".slideContainer")
-let journey = document.querySelector(".journey")
+let journeyContent = document.querySelector(".journeyContent")
+let reasonContent = document.querySelector(".reasonContent")
 let gifContainer = document.querySelector(".gifContainer")
 
 let button1 = document.querySelector(".button1")
@@ -88,8 +89,10 @@ backgroundChange.addEventListener("click", (e) => {
     arrow.classList.toggle("flip")
     heading.classList.toggle("headingBlue")
     hobbies.classList.toggle("menuBlue")
-    interests.classList.toggle("menuBlue")
+    journey.classList.toggle("menuBlue")
     reason.classList.toggle("menuBlue")
+    journeyContent.classList.toggle("menuBlue")
+    reasonContent.classList.toggle("menuBlue")
     game.classList.toggle("menuBlue")
     footer.classList.toggle("footerBlue")
     //footerImages.classList.toggle("footerBlue")
@@ -104,7 +107,11 @@ let removeHobbies = () => {
 }
 
 let removeJourney = () => {
-    journey.classList.add("hide")
+    journeyContent.classList.add("hide")
+
+}
+let removeReason = () => {
+    reasonContent.classList.add("hide")
 
 }
 
@@ -130,6 +137,7 @@ let removeGame = () => {
 hobbies.addEventListener("click", (e) => {
     removeIntro()
     removeJourney()
+    removeReason()
     removeGame()
     slideContainer.classList.remove("hide")
 
@@ -138,23 +146,32 @@ hobbies.addEventListener("click", (e) => {
 })
 
 
-interests.addEventListener("click", (e) => {
+journey.addEventListener("click", (e) => {
     removeIntro()
     removeHobbies()
+    removeReason()
     removeGame()
-    journey.classList.remove("hide")
+    journeyContent.classList.remove("hide")
 
 
 })
 
 reason.addEventListener("click", (e) => {
+    removeIntro()
+    removeHobbies()
+    removeJourney()
+    removeGame()
+    reasonContent.classList.remove("hide")
 
 
 })
 
+
+
 game.addEventListener("click", (e) => {
     removeIntro()
     removeHobbies()
+    removeReason()
     removeJourney()
     gifContainer.classList.remove("hide")
     score.classList.remove("hide")
